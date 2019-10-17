@@ -5,4 +5,14 @@ URL_page = "http://liinwww.ira.uka.de/csbib?query=%2b%28ti:global%20ti:warming%2
 Page = urlopen(URL_page)
 Soup = BeautifulSoup(Page, "html.parser")
 
-print(Soup)
+# Get the first article + removing tags
+docs_with_tags = Soup.find('pre', attrs={'class':'bibtex'})
+docs = docs_with_tags.text.strip()
+print(docs)
+
+
+'''
+# Writing it in file
+file1 = open("Myfile.txt", "a")
+file1.write(docs)
+'''
