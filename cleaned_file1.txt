@@ -1,0 +1,27 @@
+{Matthews14,
+  author =	"H. D. Matthews and et al",
+  title =	"National contributions to observed global warming",
+  journal =	"Env. Res. Lett.",
+  volume =	"9",
+  number =	"1",
+  pages =	"014010",
+  month =	jan,
+  year = 	"2014",
+  keywords =	"jrnl, eJrnl, c2014, c201x, c20xx, zz0114, climate
+		 change, CO2, greenhouse, gas, gases, emissions,
+		 methane, land use, clearing, deforestation, emitters",
+  abstract =	"{"}There is considerable interest in identifying
+		 national contributions to global warming as a way of
+		 allocating historical responsibility for observed
+		 climate change. ... present a new estimate of national
+		 contributions to observed c.w., inc. CO2 emissions from
+		 fossil fuels \& land-use change, ... also that there
+		 are vast disparities in both total and per-capita
+		 climate contributions among countries, and that across
+		 most developed countries, per-capita contributions are
+		 not currently consistent with attempts to restrict
+		 global temperature change to less than 2C above
+		 pre-industrial temperatures.{"} --
+		 [http://dx.doi.org/10.1088/1748-9326/9/1/014010
+		 (doi:10.1088/1748-9326/9/1/014010)]['14].",
+}
