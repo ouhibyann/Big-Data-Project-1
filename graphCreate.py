@@ -1,6 +1,8 @@
 import csv
 import re
+from itertools import chain
 import igraph
+
 
 # Used to read the CSV file
 with open('savedrecs-2.csv') as csv_file:
@@ -18,14 +20,27 @@ with open('savedrecs-2.csv') as csv_file:
     file1.close()
 
     #This part extracts all the first name letters
-    #In order to latter obtain a single list with the author name associated with first name
     file2 = open("Nodes_clean.txt", 'r')
-    lst_First_Name = []
-    count = 0
+    lst_Full_Name = []
     for row in file2:
-        #lst_First_Name.append([])
-        match = re.findall(" [a-zA-Z] | [a-zA-Z]", row)
-        lst_First_Name.append(match)
-        count += 1
-    print(lst_First_Name)
+        match3 = re.findall("[a-zA-Z-_]+, [a-zA-Z] |[a-zA-Z-_]+, [a-zA-Z]", row)
+        lst_Full_Name.append(match3)
+    #print(lst_Full_Name)
+    # making full Name a multiple list to 1D list
+    lst_Full_Name = list(chain.from_iterable(lst_Full_Name))
+    #print(lst_Full_Name)
+    file2.close()
+
+    #List containing full names without ','
+    lst_Name_corrected = []
+    for i in range(len(lst_Full_Name)):
+        corrected = lst_Full_Name[i].replace(',', '')
+        #print(lst_Name[i])
+        lst_Name_corrected.append(corrected)
+        #print(lst_Name_corrected)
+    lst_Full_Name = lst_Name_corrected
+    print(lst_Full_Name)
+
+#Let's construct the graph
+
 
