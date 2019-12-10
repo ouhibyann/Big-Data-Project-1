@@ -1,11 +1,10 @@
 import csv
 import re
-import itertools
 import networkx as nx
-import matplotlib.pyplot as plt
 
 
 # Used to read the CSV file
+# One just need to rename the string in "with open ('') to create the graph with another file
 with open('savedrecs_2015_Names.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     line_count = 0
@@ -65,11 +64,6 @@ for i in range(len(lst_Full_Name)):
         print(cont)
 
 
-# Write G in GML format for use in Gephi
+# Write the graph in GML format for use in Gephi
 nx.write_gml(G, "Graph_of_Names.GML")
-
-# Using Girvan_newman algorithm to find communities
-'''communities = nx.algorithms.community.centrality.girvan_newman(G)
-for communities in itertools.islice(communities, 5):
-    print(communities)'''
 
