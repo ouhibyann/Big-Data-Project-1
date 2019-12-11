@@ -1,7 +1,9 @@
 import networkx as nx
 import csv
 
-G = nx.read_gml("Graph_of_Names.GML")
+print("Enter the name file with .GML extension")
+file_Name = str(input()) # file_Name of the graph on which we'll apply the algo
+G = nx.read_gml(file_Name)
 
 # Using Girvan_newman algorithm to find communities
 communities = nx.algorithms.community.centrality.girvan_newman(G)
