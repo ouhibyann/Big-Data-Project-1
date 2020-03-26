@@ -10,4 +10,4 @@ I added some .csv file of communities after some computing done, as a result any
 I also added some .SVG so you can have a look of the communities'Graphs if you don't have any vizualisation tool.
 
 
-UPDATE 26/03 : I'm unable to push the remaining code, however you can see the results of some communities graph in "Graphs" folder
+UPDATE 26/03/2020 : I'm unable to push the remaining code, however you can see the results of some community graphs in the "Graphs" folder
